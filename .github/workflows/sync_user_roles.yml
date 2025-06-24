@@ -34,4 +34,4 @@ jobs:
         SNOWFLAKE_DATABASE: ${{ secrets.SNOWFLAKE_DATABASE }}
         SNOWFLAKE_SCHEMA: ${{ secrets.SNOWFLAKE_SCHEMA }}
         SNOWFLAKE_ROLE: ${{ secrets.SNOWFLAKE_ROLE }}
-      run: python sync_user_roles.py
+      run: python stream.py
