@@ -23,7 +23,7 @@ jobs:
 
     - name: Add Firebase credentials
       run: |
-        echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > serviceAccountKey.json
+        printf "%s" "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}" > serviceAccountKey.json
 
     - name: Run the sync script
       env:
