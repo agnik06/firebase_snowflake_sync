@@ -3,7 +3,7 @@ from firebase_admin import credentials, firestore
 import snowflake.connector
 
 # Firebase Admin SDK initialization
-cred = credentials.Certificate("firebase_admin_sdk_key.json")
+cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
